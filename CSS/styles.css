@@ -8,7 +8,6 @@
     font-family: "Raleway";
     src: url("polices/Raleway-VariableFont_wght") format("truetype");
     font-weight: normal;
-    font-size: normal;
 }
 
 /*Tête*/
@@ -16,7 +15,7 @@
 #bloc_page
 {
     border: solid;
-    width: 992px;
+    width: 900px;
     margin: auto;
 }
 
@@ -95,6 +94,7 @@ form div i
     border-radius: 10px 0px 0px 10px;
     font-size: medium;    
     padding: 10px;
+    height: 35px;
 }
 
 #recherche
@@ -119,6 +119,11 @@ form div i
     height: 35px;
 }
 
+#loupe
+{
+    display: none;
+}
+
 #filtres
 {
     display: flex;
@@ -141,13 +146,13 @@ form div i
 
 .fil a
 {
-    border: solid #DEEBFF;
+    border: solid #F2F2F2;
     text-decoration: none;
     color: #0065FC;
     display: flex;
     align-items: center;
     margin-right: 50px;
-    height: 35px;
+    height: 33px;
     border-radius: 20px;
     width: 85%;
 }
@@ -167,7 +172,7 @@ form div i
 
 .fil4 a
 {
-width: 110%;
+    width: 130%;
 }
 
 .fil a:hover
@@ -175,13 +180,13 @@ width: 110%;
     background: #0065FC;
 }
 
-.info
+.info2
 {
     display: flex;
     align-items: center;
 }
 
-.info i
+.info2 i
 {
     color: #0065FC;
     border: solid #DEEBFF 2px;
@@ -190,3 +195,4 @@ width: 110%;
     font-size: 80%;
     margin-right: 1%;
 }
+
