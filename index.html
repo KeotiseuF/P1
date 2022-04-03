@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+<html lang= "fr">
 <head>
     <title>Booki Hotels</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="CSS/styles.css"/>
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="screen and (max-width: 991px)" href="CSS/stylesT.css"/>
+    <link rel="stylesheet" media="screen and (max-device-width: 767px)" href="CSS/stylesP.css"/>
     <script src="https://kit.fontawesome.com/1de3b12928.js" crossorigin="anonymous"></script>
 </head>
 
@@ -12,7 +17,7 @@
     <header>
 
         <div id="tete">
-            <a href="images/logo/Booki3x.png"><img id="logo" src="images/logo/Booki.png" alt="Booki3x" /></a>
+            <a class="booki3x" href="images/logo/Booki3x.png"><img id="logo" src="images/logo/Booki.png" alt="Booki3x" /></a>
             
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p class="info">En plein centre ville ou en pleine nature</p>
@@ -23,8 +28,9 @@
                   <input type="search" id="recherche" name="recherche"
                    placeholder="Marseille, France"/>
                   <input type="submit" value="Rechercher" id="bouton"/>
+                  <input type="submit" value="" id="loupe"/>
                 </div>
-              </form>
+            </form>
 
               <div id="filtres">
                 <p>Filtres</p>
@@ -60,7 +66,7 @@
                 </div>     
               </div>
 
-              <div class="info">
+              <div class="info2">
                 <i class="fa-solid fa-info"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
               </div>  
@@ -126,3 +132,4 @@
     </footer>
     </div>
 </body>
+</html>
