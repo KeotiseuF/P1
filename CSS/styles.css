@@ -15,7 +15,7 @@
 #bloc_page
 {
     border: solid;
-    width: 900px;
+    width: 1100px;
     margin: auto;
 }
 
@@ -172,7 +172,7 @@ form div i
 
 .fil4 a
 {
-    width: 130%;
+    width: 100%;
 }
 
 .fil a:hover
@@ -195,4 +195,276 @@ form div i
     font-size: 80%;
     margin-right: 1%;
 }
+
+
+
+
+/*Main*/
+#main
+{
+    display: flex;
+    border: solid yellow;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+#main h3
+{
+    font-size: small;
+    margin: 0% 7% 2%;
+}
+
+#main div[class*="carte"]
+{
+    transition: 0.5s ease;
+    background-color: white;
+}
+
+#main div[class*="carte"]:hover
+{ 
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px #0065FC;
+}
+
+#main a[href*="#"]
+{
+    text-decoration: none;
+    color: black;
+}
+
+#section1, aside
+{
+    background-color: #F2F2F2;
+    border-radius: 25px;
+}
+
+div[class*="etoiles"] 
+{
+    display: flex;
+}
+
+.bleu i
+{
+    color: #0065FC;
+}
+
+.claire i
+{
+    color: #F2F2F2;
+}
+
+
+
+
+
+/*section*/
+
+#section1
+{
+    width: 60%;
+}
+
+#section1 h2
+{
+    margin: 5% 5% 2.5%;
+}
+
+#cartesH
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0% 2% 3%;
+}
+
+#cartesH div[class*="carte"]
+{
+    width: 30%;
+    margin: 1%;
+    border-radius: 10%;
+    height: 0%;
+}
+
+#section1 div[class*="imageC"]
+{
+    margin: 3%; 
+    overflow: hidden;
+    height: 90px;
+    border-radius: 10px 10px 0px 0px; 
+}
+
+#section1 .imageC1 img
+{
+    width: 105%;
+    transform: translate(-6px, -15%);
+}
+
+#section1 .imageC2 img,  #section1 .imageC3 img
+{
+    width: 110%;
+    transform: translate(-6px, -15%);
+}
+
+#section1 .imageC4 img
+{
+    width: 110%;
+    transform: translate(-6px, -25%);
+}
+
+#section1 .imageC5 img
+{
+    width: 110%;
+    transform: translate(-6px, -5%)
+}
+
+#section1 .imageC6 img
+{
+    width: 110%;
+    transform: translate(-6px, -35%)
+}
+
+#section1 p
+{
+    margin: 3% 6%;
+}
+
+#section1 div[class*="etoiles"]
+{
+    margin: 0% 6% 7%;
+}
+
+.plus
+{
+    margin-left: 5%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+/*aside*/
+
+aside
+{
+    width: 37%;
+}
+
+#cartesP
+{
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+#cartesP a
+{
+    display: flex;
+    width: 90%;
+}
+
+#cartesP p
+{
+    margin: 0%;
+}
+
+.titreP
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.titreP i
+{
+    font-size: large;
+}
+
+#cartesP h3
+{
+    margin-top: 10%;
+}
+
+#cartesP div[class*="carte"]
+{
+    display: flex;
+    width: 75%;
+    height: 110px;
+    margin: 6% 10%;
+    border-radius: 15px;
+}
+
+#cartesP div[class*="image"]
+{
+    overflow: hidden;
+    margin: 2%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#cartesP .imageC1, #cartesP .imageC3
+{
+    width: 35%;
+}
+
+#cartesP .imageC2
+{
+    width: 45%;
+}
+
+aside .imageC1 img, aside .imageC2 img
+{
+    width: 180%;
+    transform: translate( -40px, -10%);
+}
+
+aside .imageC3 img
+{
+    width: 100%;
+    transform: translate( 0px, -15%);
+}
+
+aside div[class*="prix"]
+
+{
+    margin-left: 7%;
+}
+
+#cartesP .prixC1 
+{
+    height: 25%;
+}
+
+#cartesP .etoilesC1
+{
+    margin: 7%;
+}
+
+#cartesP .etoilesC2, #cartesP .etoilesC3
+{
+    margin: 13% 7%;
+}
+
+
+
+
+/*section 2*/
+
+#section2
+{
+    border: solid red;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
 
