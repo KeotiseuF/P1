@@ -203,7 +203,6 @@ form div i
 #main
 {
     display: flex;
-    border: solid yellow;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -220,12 +219,14 @@ form div i
 {
     transition: 0.5s ease;
     background-color: white;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .1);
 }
 
 #main div[class*="carte"]:hover
 { 
     transform: scale(1.2);
     box-shadow: 5px 5px 15px #0065FC;
+    z-index: 1;
 }
 
 #main a[href*="#"]
@@ -355,9 +356,7 @@ aside
 
 #cartesP
 {
-    position: relative;
-    bottom: 15px;
-    left: 15px;
+    margin-left: 7%;
 }
 
 #cartesP a
@@ -376,7 +375,7 @@ aside
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 .titreP i
@@ -403,6 +402,11 @@ aside
     overflow: hidden;
     margin: 2%;
     border-radius: 10px 0px 0px 10px;
+}
+
+#cartesP .imageC1 img
+{
+    height: 115px;
 }
 
 #cartesP .imageC1, #cartesP .imageC3
@@ -443,9 +447,14 @@ aside div[class*="prix"]
     margin: 7%;
 }
 
-#cartesP .etoilesC2, #cartesP .etoilesC3
+#cartesP .etoilesC2
 {
     margin: 13% 7%;
+}
+
+#cartesP .etoilesC3
+{
+    margin: 16% 7%;
 }
 
 
@@ -458,7 +467,6 @@ aside div[class*="prix"]
     border: solid red;
     width: 100%;
 }
-
 
 
 

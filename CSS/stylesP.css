@@ -122,3 +122,93 @@ form
 }
 
 
+/*main*/
+
+#main
+{
+    background: none;   
+}
+
+#section1:nth-child(1)
+{
+    order: 2;
+}
+
+aside:nth-child(2)
+{
+    order: 1;
+}
+
+#section2:nth-child(3)
+{
+    order: 3;
+}
+
+aside
+ {
+    width: 100%;
+    border-radius: 0%;
+    height: 550px;
+    padding-bottom: 10%;
+ }
+
+#section1
+{
+    background: none;
+}
+
+#cartesP 
+{
+   margin: 0%;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+#cartesP div[class*="carte"] 
+{
+    margin: auto 10%;
+    width: 324px;
+}
+
+#cartesP .etoilesC2
+{
+    margin-top: 40%;
+}
+
+#cartesP .etoilesC3
+{
+    margin-top: 35%;
+}
+
+#cartesP div[class*="carte"] 
+{
+    margin: auto 10%;
+    width: 324px;
+}
+
+
+#cartesH div[class*="carte"] 
+{
+    width: 324px;
+}
+
+
+#cartesH
+{
+    display: flex;
+   align-items: center;
+   margin-bottom: 5%;
+}
+
+#section1{
+    width: 100%;
+}
+
+#cartesH div[class*="carte"] {
+
+    border-radius: 20px;
+}
+
+#section1 div[class*="imageC"] {
+    border-radius: 15px 15px 0px 0px;
+}

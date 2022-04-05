@@ -70,3 +70,109 @@ header
     display: flex;
     flex-direction: column;
 }
+
+
+
+/*Main(section-aside)*/
+
+#section1
+{
+    width: 407px;
+    padding-bottom: 2%;
+}
+
+#cartesH div[class*="carte"]
+{
+    width: 170px;
+}
+
+aside
+{
+    width: 350px;
+   
+}
+
+#main
+{
+    background-color: #DEEBFF;
+    border-radius: 25px 25px 0px 0px;
+}
+
+aside .titreP
+{
+    position: relative;
+    bottom: 10px;
+}
+
+#cartesP
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+   
+}
+
+#cartesP div[class*="carte"]
+{
+    width: 80%;
+    height: 140px;
+}
+
+#cartesP .imageC1, #cartesP .imageC3
+{
+    width: 50%;
+}
+
+#cartesP .imageC1 img, #cartesP .imageC2 img
+{
+    height: 110%;
+}
+
+#cartesP .etoilesC1
+{
+    margin-top: 25%;
+}
+
+#cartesP .imageC2
+{
+    width: 75%;
+}
+
+#cartesP .etoilesC2
+{
+    margin-top: 30%;
+}
+
+#cartesP .prixC1 p
+{
+    width: 120%;
+}
+
+#cartesP .imageC3 img
+{
+    height: 120%;
+}
+
+#cartesP .etoilesC3
+{
+    margin-top: 45%;
+}
+
+#section1 .imageC1 img, #section1 .imageC5 img
+{
+    width: 311px;
+    transform: translate(-6px, -25%);
+}
+
+#section1 .imageC2 img,  #section1 .imageC3 img
+ {
+    width: 310px;
+    transform: translate(-6px, -32%);
+}
+
+#section1 .imageC4 img, #section1 .imageC6 img 
+{
+    width: 312px;
+    transform: translate(-6px, -43%);
+}
