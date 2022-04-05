@@ -464,14 +464,138 @@ aside div[class*="prix"]
 
 #section2
 {
-    border: solid red;
+    width: 100%;
+    margin-top: 2%;
+}
+
+#cartesA
+{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
+ .carteM 
+{
+    width: 245px;
+    height: 350px;
+}
 
 
+.Apart1, .Apart2
+{
+    display: flex;
+    width: 48.5%;
+    justify-content: space-between;
+}
 
+.imageM
+{
+    overflow: hidden;
+    height: 305px;
+    border-radius: 15px 15px 0px 0px;
+}
 
+#cartesA div[class*="titre"]
+{
+    margin-top: 6%
+}
+
+#cartesA div[class*="imageC"]
+{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.Spart1, .Spart2
+{
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+#cartesA div[class*="carte"]
+{
+    border-radius: 15px 15px 15px 15px;
+}
+
+.Spart1 .carte1 
+{
+    height: 185px;
+}
+
+.Spart1 .carte2 
+{
+    height: 135px;
+}
+
+.Spart2 .carte1 
+{
+    height: 150px;
+}
+
+.Spart2 .carte2 
+{
+    height: 170px;
+}
+
+.Spart1 .imageC1 
+{
+    height: 140px;  
+}
+
+.Spart1 .imageC2 
+{
+    height: 90px;  
+}
+
+.Spart2 .imageC1
+{
+    height: 105px;  
+}
+
+.Spart2 .imageC2 
+{
+    height: 125px;    
+}
+
+.Apart1 .carteM img
+{
+    width: 474px;
+    transform: translate(-100px, 0px); 
+}
+
+.Spart1 .imageC1 img 
+{
+    width: 265px;
+    transform: translate(-5px, -115px);   
+}
+
+.Spart1 .imageC2 img
+{
+    width: 265px;
+    transform: translate(0px, -25px);  
+}
+
+.Apart2 .carteM img
+{
+    width: 470px;
+    transform: translate(-85px, -5px);     
+}
+
+.Spart2 .imageC1 img
+{
+    width: 260px;
+    transform: translate(-0px, -3px); 
+}
+
+.Spart2 .imageC2 img 
+{
+    width: 266px;
+    transform: translate(0px, -20px); 
+}
 
 
 

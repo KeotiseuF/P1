@@ -96,6 +96,7 @@ aside
 {
     background-color: #DEEBFF;
     border-radius: 25px 25px 0px 0px;
+    background-size: 5%;
 }
 
 aside .titreP
@@ -157,22 +158,4 @@ aside .titreP
 #cartesP .etoilesC3
 {
     margin-top: 45%;
-}
-
-#section1 .imageC1 img, #section1 .imageC5 img
-{
-    width: 311px;
-    transform: translate(-6px, -25%);
-}
-
-#section1 .imageC2 img,  #section1 .imageC3 img
- {
-    width: 310px;
-    transform: translate(-6px, -32%);
-}
-
-#section1 .imageC4 img, #section1 .imageC6 img 
-{
-    width: 312px;
-    transform: translate(-6px, -43%);
 }
