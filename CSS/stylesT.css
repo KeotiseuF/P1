@@ -248,3 +248,14 @@ aside .titreP
     position: relative;
     top: -8%;
 }
+
+
+
+
+/*Footer*/
+
+footer 
+{
+    right: 0px;
+    width: 100%;
+}

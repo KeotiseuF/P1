@@ -330,3 +330,9 @@ aside
 {
     margin: 10% 7%; 
 }
+
+.Sfooter
+{
+    flex-direction: column;
+    width: 100%;
+}
