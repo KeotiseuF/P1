@@ -79,6 +79,8 @@ header
 {
     width: 407px;
     padding-bottom: 2%;
+    z-index: 1;
+    border-radius: 0px 25px 25px 0px;
 }
 
 #cartesH div[class*="carte"]
@@ -89,7 +91,7 @@ header
 aside
 {
     width: 350px;
-   
+    border-radius: 25px 0px 0px 25px;
 }
 
 #main
@@ -111,7 +113,6 @@ aside .titreP
     flex-direction: column;
     justify-content: space-around;
     height: 90%;
-   
 }
 
 #cartesP div[class*="carte"]
@@ -158,4 +159,92 @@ aside .titreP
 #cartesP .etoilesC3
 {
     margin-top: 45%;
+}
+
+
+
+/*Main (section2)*/
+
+#section2
+{ 
+    margin-top: 0%;
+    padding-top: 2%;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#cartesA div[class*="carte"] {
+    margin: 5%;
+} 
+
+
+#cartesA
+{
+    flex-direction: column;
+    width: 580px;
+}
+
+.Apart1
+{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Spart1
+{
+    flex-direction: row;
+}
+
+.Apart2
+{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+
+.Spart2
+{
+    flex-direction: row;
+}
+
+.imageM 
+{
+    height: 105px;
+    margin-bottom: -20px;
+}
+
+.Apart1 .carteM img 
+{
+    width: 547px;
+    transform: translate(0px, -85px);
+}
+
+.Apart2 .carteM img 
+{
+    width: 552px;
+    transform: translate(0px, -170px);
+}
+
+.carteM 
+{
+    width: 546px;
+    height: 145px;
+}
+
+.Spart1 .imageC1 img 
+{
+    transform: translate(0px, -115px);
+}
+
+.Spart2 .carte2 
+{
+    position: relative;
+    top: -40px;
+}
+
+.Apart2 .carteM  
+{
+    position: relative;
+    top: -8%;
 }

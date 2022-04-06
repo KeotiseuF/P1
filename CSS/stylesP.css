@@ -122,7 +122,9 @@ form
 }
 
 
-/*main*/
+
+
+/*Main(section-aside)*/
 
 #main
 {
@@ -190,6 +192,7 @@ aside
 #cartesH div[class*="carte"] 
 {
     width: 324px;
+    height: 182px;
 }
 
 
@@ -200,15 +203,130 @@ aside
    margin-bottom: 5%;
 }
 
-#section1{
+#section1
+{
     width: 100%;
 }
 
-#cartesH div[class*="carte"] {
+#cartesH div[class*="carte"] 
+{
 
     border-radius: 20px;
 }
 
-#section1 div[class*="imageC"] {
+#section1 div[class*="imageC"] 
+{
     border-radius: 15px 15px 0px 0px;
+}
+
+#section1 .imageC1 img 
+{
+    width: 100%;
+    transform: translate(0px, -26%);
+}
+
+#section1 .imageC2 img, #section1 .imageC3 img 
+{
+    width: 102%;
+    transform: translate(0px, -36%);
+}
+
+#section1 .imageC4 img 
+{
+    width: 100%;
+    transform: translate(0px, -38%);
+}
+
+#section1 .imageC5 img 
+{
+    width: 100%;
+    transform: translate(0px, -27%);
+}
+
+#section1 .imageC6 img 
+{
+    width: 100%;
+    transform: translate(0px, -42%);
+}
+
+
+
+
+
+/*Main (section2)*/
+
+#section2 h2
+{
+    padding-right: 45%;
+}
+
+#cartesA
+ {
+    width: 334px;
+}
+
+.Apart1, .Apart2
+{
+    flex-direction: column;
+    width: 100%;
+}
+
+.Spart1, .Spart2
+{
+    flex-direction: column;
+    width: auto;
+}
+
+#cartesA div[class*=carte]
+{
+    width: 100%;
+    height: 155px;
+    margin: 5% 0%;
+    position: initial;
+}
+
+#cartesA div[class*="image"]
+{
+    width: 100%;
+    height: 110px;
+}
+
+.Apart1 .carteM img 
+{
+    width: 100%;
+    transform: translate(0px, -29px);
+}
+
+.Spart1 .imageC1 img 
+{
+    width: 100%;
+    transform: translate(0px, -164px);
+}
+
+.Spart1 .imageC2 img, .Apart2 .carteM img  
+{
+    width: 100%;
+    transform: translate(0px, -33px);
+}
+
+.Spart2 .imageC1 img 
+{
+    width: 100%;
+    transform: translate(0px, -22px);
+}
+
+.Spart2 .imageC2 img 
+{
+    width: 100%;
+    transform: translate(0px, -42px);
+}
+
+#cartesA h3 
+{
+    margin: -1% 7%; 
+}
+
+#cartesA .titreM h3 
+{
+    margin: 10% 7%; 
 }
