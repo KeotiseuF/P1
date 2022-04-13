@@ -10,12 +10,16 @@
     font-weight: normal;
 }
 
-/*Tête*/
-
 #bloc_page
 {
-    width: 1100px;
+    width: 1300px;
     margin: auto;
+}
+
+header, main
+{
+    width: 95%;
+    margin-left: 2.5%;
 }
 
 body
@@ -24,55 +28,67 @@ body
     font-size: small;
 }
 
-h2
+body ul
 {
-    font-size: large;
-}
-
-header
-{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5%;
-}
-
-#navigation
-{
-    width: 30%;   
-}
-
-#navigation ul
-{   
     list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 5%;
-    margin: 0%;
 }
 
-#navigation a, form div a
+body a
 {
     text-decoration: none;
     color: black;
 }
 
-#navigation a:hover
+h2
 {
-    color: #0065FC;
-    border-top: solid;
-    padding-top: 50px;
+    font-size: 133%;
+}
+
+
+
+/*Tête*/
+
+#navigation
+{
+    display: flex;
+    justify-content: space-between;
 }
 
 #logo
 {
-    width: 20%;
-    margin-left: 2%;
-    padding: 0%;
+    width: 110px;
+    margin: 10px 15px;
+    height: 50px;
+}
+
+#navigation ul
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0%; 
+    padding-top: 3%;
+}
+
+#navigation li
+{
+    margin-right: 5%;
+}
+
+#navigation a
+{
+    border-top: #0065FC; 
+    padding: 20px;
+}
+
+#navigation a:hover
+{
+    border-top: #0065FC solid; 
+    color: #0065FC;
 }
 
 #tete h2
 {
-    margin-bottom: 1%;
+    margin-bottom: 0.5%;
 }
 
 .info
@@ -80,42 +96,29 @@ header
     margin-top: 0%;
 }
 
+
+
+
+/*barre recherche*/
+
 form div
 {
 
     display: flex;
 }
 
-form div i
+form i
 {
+    margin-left: 25% ;
+}
 
+form a
+{
     background: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
     font-size: medium;    
-    padding: 10px;
-    height: 35px;
-}
-
-#recherche
-{
-    height: 35px;
-    border: solid #F2F2F2;
-}
-
-::placeholder
-{
-    color:black;
-    font-weight: bolder;
-    padding: 10px;
-}
-
-#bouton
-{
-    border: none;
-    background: #0065FC;
-    color: white;
-    border-radius: 0px 10px 10px 0px;
-    height: 35px;
+    padding: 10px 15px;
+    height: 40px;
 }
 
 #loupe
@@ -123,58 +126,79 @@ form div i
     display: none;
 }
 
+#recherche
+{
+    height: 40px;
+    border: solid #F2F2F2 1px;
+}
+
+::placeholder
+{
+    color:black;
+    font-weight: bolder;
+    padding: 15px;
+}
+
+#bouton
+{
+    border: none;
+    background: #0065FC;
+    color: white;
+    border-radius: 0px 12px 12px 0px;
+    height: 40px;
+    padding: 0px 15px;
+}
+
+
+
+
+/*filtres*/
+
 #filtres
 {
     display: flex;
     font-weight: bold;
-    align-items: center;
-    height: 15%;
-    justify-content: space-between;
     margin: 2% 0%;
 }
 
-.fil
+#filtres > p
+{
+    margin-right: 2.5%;
+}
+
+.partF
 {
     display: flex;
     align-items: center;
-    height: 100%;
-    width: 100%;
     justify-content: space-around;
-    margin-left: 2% ;
 }
 
-.fil a
+.partF p
+{
+    margin-left: 10%;
+}
+
+.partF i
+{
+    background-color: #DEEBFF;
+    padding: 10px;
+    border-radius: 50%;
+    color: #0065FC;
+    margin-left: -2% ;
+}
+
+.partF a
 {
     border: solid #F2F2F2;
-    text-decoration: none;
-    color: #0065FC;
     display: flex;
     align-items: center;
     margin-right: 50px;
     height: 33px;
     border-radius: 20px;
-    width: 85%;
+    width: 90%;
 }
 
-.fil i
-{
-    background-color: #DEEBFF;
-    padding: 10px;
-    border-radius: 50%;
-}
-
-.fil p
-{
-    color: black;
-    margin-left: 10%;
-}
-
-.fil4 a
-{
-    width: 100%;
-}
-
-.fil a:hover
+.partF a:hover
 {
     background: #0065FC;
 }
@@ -183,6 +207,7 @@ form div i
 {
     display: flex;
     align-items: center;
+
 }
 
 .info2 i
@@ -191,58 +216,185 @@ form div i
     border: solid #DEEBFF 2px;
     padding: 0.5%;
     border-radius: 50%;
-    font-size: 80%;
+    font-size: 100%;
     margin-right: 1%;
 }
 
 
 
 
-/*Main*/
+/*Tablette Head*/
+
+@media screen and (max-width: 991px) 
+{
+    #bloc_page
+    {
+        width: 890px;
+        margin: auto;
+    }
+
+    #navigation a:hover
+    {
+        border-bottom: solid #0065FC;
+        border-top: none; 
+    }
+    
+    #tete > p, #tete h2
+    {
+        text-align: center;
+    }
+
+    form
+    {
+        width: 31.5%;
+        margin-left: 30%;
+    }
+
+
+}
+
+
+
+/*Phone Head*/
+
+@media screen and (max-width: 767px) 
+{
+    #logo
+    {
+       margin-left: 93px;
+    }
+
+    #navigation ul {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #navigation
+    {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #tete h2, #tete p
+    {
+        text-align: initial;
+    }
+
+    form
+    {
+        margin: 0%;
+    }
+
+    #bouton
+    {
+        display: none;
+    }
+
+    #loupe
+    {
+        display: block;
+        position: relative;
+        right: 5px;
+        bottom: 1PX;
+        
+    }
+
+    #loup
+    {
+        border: none;
+        color: white;
+        background: #0065FC;
+        width: 43px;
+        height: 42px;
+        border-radius: 30%;
+    }
+
+    #loup + i
+    {
+        color: white;
+        position: relative;
+        bottom: 30px;
+        left: 5px;
+    }
+
+    #filtres
+    {
+        display: initial;
+    }
+
+    .partF
+    {
+        flex-wrap: wrap;
+    }
+
+    .partF a
+    {
+        margin-bottom: 10%;
+    }
+}
+
+
+
+
+/*Section1-Aside*/
+
 #main
 {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 1%;
 }
 
-#main h3
+#main h2, .titreP
 {
-    font-size: small;
-    margin: 0% 7% 2%;
+    margin: 5% 5% 2%;
 }
 
-#main div[class*="carte"]
+.carte
 {
     transition: 0.5s ease;
     background-color: white;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .1);
+    width: 29%;
+    margin: 2%;
+    border-radius: 17px;
+    height: 180px;
 }
 
-#main div[class*="carte"]:hover
+.carte:hover
 { 
     transform: scale(1.2);
     box-shadow: 5px 5px 15px #0065FC;
     z-index: 1;
 }
 
-#main a[href*="#"]
-{
-    text-decoration: none;
-    color: black;
-}
-
 #section1, aside
 {
-    background-color: #F2F2F2;
-    border-radius: 25px;
+    background-color:#F2F2F2;
+    border-radius: 20px;
+    margin-top: 2%;
 }
 
-div[class*="etoiles"] 
+#section1
+{
+    width: 60%;
+}
+
+aside
+{
+    width: 38%;
+}
+
+#section1 h3
+{
+    font-size: small;
+    margin: 0% 7% 2%;
+}
+
+#section1 .etoiles 
 {
     display: flex;
+    margin: 0% 6% 7%;
 }
 
 .bleu i
@@ -256,83 +408,36 @@ div[class*="etoiles"]
 }
 
 
-
-
-
-/*section*/
-
-#section1
-{
-    width: 60%;
-}
-
-#section1 h2
-{
-    margin: 5% 5% 2.5%;
-}
-
 #cartesH
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0% 2% 3%;
+    margin: 0% 2% 5%;
 }
 
-#cartesH div[class*="carte"]
+#section1 div[class*="imgH"]
 {
-    width: 30%;
-    margin: 1%;
-    border-radius: 10%;
-    height: 0%;
-}
-
-#section1 div[class*="imageC"]
-{
-    margin: 3%; 
+    margin: 2%; 
     overflow: hidden;
-    height: 90px;
-    border-radius: 10px 10px 0px 0px; 
+    height: 100px;
+    border-radius: 13px 13px 0px 0px; 
 }
 
-#section1 .imageC1 img
+#section1 img
 {
-    width: 105%;
-    transform: translate(-6px, -15%);
+    width: 103%;
+    transform: translate(0px, -14%);
 }
 
-#section1 .imageC2 img,  #section1 .imageC3 img
+#section1 .body 
 {
-    width: 110%;
-    transform: translate(-6px, -15%);
-}
-
-#section1 .imageC4 img
-{
-    width: 110%;
-    transform: translate(-6px, -25%);
-}
-
-#section1 .imageC5 img
-{
-    width: 110%;
-    transform: translate(-6px, -5%)
-}
-
-#section1 .imageC6 img
-{
-    width: 110%;
-    transform: translate(-6px, -35%)
+    margin-top: 5%;
 }
 
 #section1 p
 {
     margin: 3% 6%;
-}
-
-#section1 div[class*="etoiles"]
-{
-    margin: 0% 6% 7%;
 }
 
 .plus
@@ -348,252 +453,265 @@ div[class*="etoiles"]
 
 /*aside*/
 
-aside
+.titreP
 {
-    width: 37%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #cartesP
 {
-    margin-left: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
 }
 
 #cartesP a
 {
     display: flex;
-    width: 90%;
 }
 
-#cartesP p
+aside .carte 
 {
-    margin: 0%;
+    width: 78%;
+    height: 144px;
 }
 
-.titreP
+aside h3
 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 4%;
+    font-size: small;
 }
 
-.titreP i
-{
-    font-size: large;
-}
-
-#cartesP h3
-{
-    margin-top: 10%;
-}
-
-#cartesP div[class*="carte"]
+aside .etoiles 
 {
     display: flex;
-    width: 75%;
-    height: 110px;
-    margin: 6% 10%;
-    border-radius: 15px;
+    margin-top: 30%;
 }
 
-#cartesP div[class*="image"]
+aside div[class*="imgP"] 
 {
+    margin: 1.5%;
     overflow: hidden;
-    margin: 2%;
-    border-radius: 10px 0px 0px 10px;
+    height: 133px;
+    border-radius: 13px 0px 0px 13px;
+    width: 136px;
 }
 
-#cartesP .imageC1 img
+aside .body
 {
-    height: 115px;
+    margin-left: 5%;
+    width: 30%;
 }
 
-#cartesP .imageC1, #cartesP .imageC3
+
+
+ /*Tablette Section1-Aside*/
+
+@media screen and (max-width: 991px) 
 {
-    width: 35%;
+    .carte
+    {
+        width: 224px;
+    }
+
+    aside div[class*="imgP"] 
+    {
+        width: 108px;
+        height: 137px;
+    }
+
+    aside .carte 
+    {
+        margin-bottom: 15%;
+    }
+
+    aside .body 
+    {
+        width: 44%;
+    }
+
+    #cartesH
+    {
+        margin: 0%;
+    } 
+
+    .plus
+    {
+        position: relative;
+        bottom: 627px;
+        left: 378px;
+    }
+    
 }
 
-#cartesP .imageC2
+@media screen and (min-width: 435px) and (max-width: 767px)
 {
-    width: 45%;
-}
+    #cartesP .carte
+    {
+        width: 370px;
+    }
+}  
 
-aside .imageC1 img, aside .imageC2 img
+
+
+
+/*Phone Section1-Aside*/
+
+@media screen and (max-width: 767px) 
 {
-    width: 180%;
-    transform: translate( -40px, -10%);
+    #bloc_page
+    {
+        width: 100%;
+    }
+    
+    #main
+    {
+        flex-direction: column;
+    }
+
+    #section1
+    {
+        order: 2;
+        width: 100%;
+        background-color: initial;
+    }
+    
+    aside
+    {
+        order: 1;
+        width: 100%;
+        border-radius: initial;
+    }
+
+    #section2
+    {
+        order: 3;
+    }
+
+    .carte 
+    {
+        width: 355px;
+        height: 205px;
+    }
+
+    aside .carte 
+    {
+        margin-bottom: 0%;
+        width: 90%;
+        height: initial;
+    }
+
+    .plus
+    {
+        position: initial;
+    }
+
+    aside div[class*="imgP"]
+    {
+        width: 148px;
+        height: 130px;
+    }
+
+    aside .body 
+    {
+        width: 125px;
+    }
+
+    #section1 .carte:hover 
+    {
+        transform: scale(1.07);
+    }
+
+    aside .carte:hover
+    {
+            transform: scale(1.1);
+    }
+
+    #cartesH
+    {
+        margin-bottom: 5%;
+    }
 }
 
-aside .imageC3 img
-{
-    width: 100%;
-    transform: translate( 0px, -15%);
-}
 
-aside div[class*="prix"]
-
-{
-    margin-left: 7%;
-}
-
-#cartesP .prixC1 
-{
-    height: 25%;
-}
-
-#cartesP .etoilesC1
-{
-    margin: 7%;
-}
-
-#cartesP .etoilesC2
-{
-    margin: 13% 7%;
-}
-
-#cartesP .etoilesC3
-{
-    margin: 16% 7%;
-}
-
-
-
-
-/*section 2*/
+/*Section 2*/
 
 #section2
 {
     width: 100%;
-    margin-top: 2%;
+    margin-top: 5%;
+    height: 100%;
+}
+
+#section2 h2
+{
+    margin: 0% 0% 2%;
 }
 
 #cartesA
 {
     display: flex;
-    justify-content: space-between;
     width: 100%;
-}
-
- .carteM 
-{
-    width: 245px;
-    height: 350px;
-}
-
-
-.Apart1, .Apart2
-{
-    display: flex;
-    width: 48.5%;
+    height: 100%;
     justify-content: space-between;
 }
 
-.imageM
+#section2 div[class*="imgA"]
 {
     overflow: hidden;
-    height: 305px;
-    border-radius: 15px 15px 0px 0px;
-}
-
-#cartesA div[class*="titre"]
-{
-    margin-top: 6%
-}
-
-#cartesA div[class*="imageC"]
-{
-    overflow: hidden;
-    width: 100%;
+    height: 78%;
     border-radius: 10px 10px 0px 0px;
 }
 
-.Spart1, .Spart2
+.carteM
 {
-    width: 255px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
+    height: 100%;
+    width: 45%;
+    border-radius: 15px 15px 15px 15px;
+    transition: 0.5s ease;
+    background-color: white;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .1);
 }
 
-#cartesA div[class*="carte"]
+.carteM:hover
+{ 
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px #0065FC;
+    z-index: 1;
+}
+
+.imgM
 {
+    height: 90%;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+#section2 .carte
+{
+    height: 47%;
+    width: 50%;
+    margin-top: 0%;
+    margin: initial;
     border-radius: 15px 15px 15px 15px;
 }
 
-.Spart1 .carte1 
+.Apart
 {
-    height: 185px;
+    display: flex;
+    flex-flow: column wrap;
+    height: 390px;
+    width: 48%;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
-.Spart1 .carte2 
+#section2 h3
 {
-    height: 135px;
-}
-
-.Spart2 .carte1 
-{
-    height: 150px;
-}
-
-.Spart2 .carte2 
-{
-    height: 170px;
-}
-
-.Spart1 .imageC1 
-{
-    height: 140px;  
-}
-
-.Spart1 .imageC2 
-{
-    height: 90px;  
-}
-
-.Spart2 .imageC1
-{
-    height: 105px;  
-}
-
-.Spart2 .imageC2 
-{
-    height: 125px;    
-}
-
-.Apart1 .carteM img
-{
-    width: 474px;
-    transform: translate(-100px, 0px); 
-}
-
-.Spart1 .imageC1 img 
-{
-    width: 265px;
-    transform: translate(-5px, -115px);   
-}
-
-.Spart1 .imageC2 img
-{
-    width: 265px;
-    transform: translate(0px, -25px);  
-}
-
-.Apart2 .carteM img
-{
-    width: 470px;
-    transform: translate(-85px, -5px);     
-}
-
-.Spart2 .imageC1 img
-{
-    width: 260px;
-    transform: translate(-0px, -3px); 
-}
-
-.Spart2 .imageC2 img 
-{
-    width: 266px;
-    transform: translate(0px, -20px); 
+    margin-left: 5%;   
 }
 
 
@@ -602,36 +720,94 @@ aside div[class*="prix"]
 
 footer
 {
-    position: relative;
-    padding: 3% 0% 3% 0%;
-    right: 25px;
-    margin-top: 5%;
     background-color: #F2F2F2;
-    width: 1145px;
+    margin-top: 4%;
+    height: 100%;
 }
+
 
 .Sfooter
 {
+    padding-top: 2%;
     display: flex;
     justify-content: space-between;
-    width: 75%;
-    padding-left: 2.5%;
+    width: 80%;
+    margin: 2.5%;
 }
 
-.Sfooter a
+.Sfooter ul 
 {
-    text-decoration: none;
-    color: black;
+    padding-left: 0%;
 }
 
-.Sfooter ul
-{
-    list-style-type: none;
-    padding-inline-start: 0px;
-    margin-bottom: 5%;
-}
-
-.Sfooter ul li
+.Sfooter li
 {
     margin-bottom: 5%;
+}
+
+
+
+
+@media screen and (min-width: 435px) and (max-width: 767px)
+{
+    #cartesA
+    {
+        flex-direction: column;
+    }
+
+    .Apart
+    {
+        width: 100%;
+        margin-top: 3%;
+        height: 526px;
+    }
+
+    #section2 .carte:hover 
+    {
+        transform: scale(1.07);
+    }
+
+    #section2 .carteM:hover 
+    {
+        transform: scale(1.07);
+    }
+
+}  
+
+@media screen and (max-width: 530px)
+{
+    #cartesA
+    {
+        flex-direction: column;
+    }
+
+    .Apart
+    {
+        width: 100%;
+        height: 100%;
+        align-content: center;
+    }
+
+    #section2 .carte, .carteM
+    {
+        width: 355px;
+        height: 205px;
+        margin: 3%;
+    }
+
+    .imgM 
+    {
+        height: 80%;
+    }
+
+    .Sfooter
+    {
+        display: initial;            
+    }
+
+    .Sfooter nav
+    {
+        margin-left: 5%;
+    }
+
 }
