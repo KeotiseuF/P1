@@ -28,11 +28,6 @@ body
     font-size: small;
 }
 
-p::last-letter
-{
-    font-weight: bold;
-}
-
 body ul
 {
     list-style-type: none;
