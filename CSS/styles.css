@@ -12,7 +12,7 @@
 
 #bloc_page
 {
-    width: 1300px;
+    width: 1055px;
     margin: auto;
 }
 
@@ -26,6 +26,11 @@ body
 {
     font-family: "Raleway", sans-serif;
     font-size: small;
+}
+
+p::last-letter
+{
+    font-weight: bold;
 }
 
 body ul
@@ -44,6 +49,11 @@ h2
     font-size: 133%;
 }
 
+img
+{
+    width: 100%;
+    transform: translate(0px, -14%);
+}
 
 
 /*Tête*/
@@ -56,9 +66,9 @@ h2
 
 #logo
 {
-    width: 110px;
+    width: 100px;
     margin: 10px 15px;
-    height: 50px;
+    height: 39px;
 }
 
 #navigation ul
@@ -170,18 +180,20 @@ form a
 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
 }
 
 .partF p
 {
-    margin-left: 10%;
+    margin-left: 10px;
 }
 
 .partF i
 {
     background-color: #DEEBFF;
-    padding: 10px;
+    padding: 14px;
     border-radius: 50%;
     color: #0065FC;
     margin-left: -2% ;
@@ -192,10 +204,9 @@ form a
     border: solid #F2F2F2;
     display: flex;
     align-items: center;
-    margin-right: 50px;
-    height: 33px;
+    padding-right: 15px;
+    height: 42px;
     border-radius: 20px;
-    width: 90%;
 }
 
 .partF a:hover
@@ -207,7 +218,7 @@ form a
 {
     display: flex;
     align-items: center;
-
+    width: 43%;
 }
 
 .info2 i
@@ -218,6 +229,11 @@ form a
     border-radius: 50%;
     font-size: 100%;
     margin-right: 1%;
+    width: 25px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -229,7 +245,7 @@ form a
 {
     #bloc_page
     {
-        width: 890px;
+        width: 870px;
         margin: auto;
     }
 
@@ -239,18 +255,24 @@ form a
         border-top: none; 
     }
     
-    #tete > p, #tete h2
+    #tete
     {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    form
+    .partF
     {
-        width: 31.5%;
-        margin-left: 30%;
+        justify-content: space-around;
+        width: 85%;
+        margin-top: 0%;
     }
 
-
+    .partF a
+    {
+        margin-bottom: 10%;
+    }
 }
 
 
@@ -259,6 +281,16 @@ form a
 
 @media screen and (max-width: 767px) 
 {
+    #bloc_page
+    {
+        font-size: initial;
+    }
+
+    body #main h3
+    {
+        font-size: medium;
+    }
+
     #logo
     {
        margin-left: 93px;
@@ -273,6 +305,19 @@ form a
     {
         align-items: center;
         flex-direction: column;
+        overflow: hidden;
+    }
+
+    #navigation a 
+    {
+        border-bottom: #F2F2F2 solid;
+        padding: 9px 58px;
+    }
+
+    #tete
+    {
+        align-items: initial;
+        padding-left: 5%;
     }
 
     #tete h2, #tete p
@@ -280,9 +325,20 @@ form a
         text-align: initial;
     }
 
+    #tete h2
+    {
+        width: 81%;
+    }
+
     form
     {
-        margin: 0%;
+        margin-top: 3%;
+    }
+
+    #recherche 
+    {
+        width: 245px;
+        padding-right: 5%;
     }
 
     #bouton
@@ -294,9 +350,8 @@ form a
     {
         display: block;
         position: relative;
-        right: 5px;
-        bottom: 1PX;
-        
+        right: 12px;
+        bottom: 1px;
     }
 
     #loup
@@ -313,24 +368,38 @@ form a
     {
         color: white;
         position: relative;
-        bottom: 30px;
-        left: 5px;
+        bottom: 32px;
+        left: -2px;
     }
 
     #filtres
     {
         display: initial;
+        margin: 0%;
     }
 
-    .partF
+    .partF 
     {
-        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .partF a
     {
         margin-bottom: 10%;
     }
+
+    .info2
+    {
+        width: 331px;
+        align-items: baseline;
+    }
+
+    .info2 i
+    {
+        font-size: small;
+        margin-right: 4%;
+    }
+ 
 }
 
 
@@ -350,7 +419,7 @@ form a
     margin: 5% 5% 2%;
 }
 
-.carte
+div[class*="carte"]
 {
     transition: 0.5s ease;
     background-color: white;
@@ -358,12 +427,12 @@ form a
     width: 29%;
     margin: 2%;
     border-radius: 17px;
-    height: 180px;
+    height: 150px;
 }
 
-.carte:hover
+div[class*="carte"]:hover
 { 
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 5px 5px 15px #0065FC;
     z-index: 1;
 }
@@ -377,24 +446,25 @@ form a
 
 #section1
 {
-    width: 60%;
+    width: 64%;
 }
 
 aside
 {
-    width: 38%;
+    width: 33%;
 }
 
 #section1 h3
 {
     font-size: small;
-    margin: 0% 7% 2%;
+    margin: 0% 6% 2%;
 }
 
 #section1 .etoiles 
 {
     display: flex;
     margin: 0% 6% 7%;
+    font-size: smaller;
 }
 
 .bleu i
@@ -407,27 +477,32 @@ aside
     color: #F2F2F2;
 }
 
-
 #cartesH
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0% 2% 5%;
+    margin: 0% 2% 1%;
 }
 
 #section1 div[class*="imgH"]
 {
-    margin: 2%; 
+    margin: 2.5%; 
     overflow: hidden;
-    height: 100px;
+    height: 75px;
     border-radius: 13px 13px 0px 0px; 
 }
 
-#section1 img
+.imgH4 img
 {
-    width: 103%;
-    transform: translate(0px, -14%);
+    width: 100%;
+    transform: translate(0px, -28%);
+}
+
+.imgH6 img
+{
+    width: 100%;
+    transform: translate(0px, -37%);
 }
 
 #section1 .body 
@@ -457,7 +532,12 @@ aside
 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+}
+
+.titreP i
+{
+    font-size: large;
+    padding-left: 65px;
 }
 
 #cartesP
@@ -476,34 +556,54 @@ aside
 aside .carte 
 {
     width: 78%;
-    height: 144px;
+    height: 114px;
 }
 
 aside h3
 {
     font-size: small;
+    margin-bottom: 0%;
 }
 
 aside .etoiles 
 {
     display: flex;
-    margin-top: 30%;
+    margin-top: 24%;
+    font-size: smaller;
 }
 
 aside div[class*="imgP"] 
 {
     margin: 1.5%;
     overflow: hidden;
-    height: 133px;
+    height: 106.5px;
     border-radius: 13px 0px 0px 13px;
-    width: 136px;
+    width: 88px;
+}
+
+.imgP1 img, .imgP2 img
+{
+    width: 179%;
+    transform: translate(-34px, 0%);
+}
+
+.imgP3 img
+{
+    width: 133%;
+    transform: translate(-25px, -26%);
 }
 
 aside .body
 {
     margin-left: 5%;
-    width: 30%;
+    width: 46%;
 }
+
+aside p
+{
+    margin-top: 5%;
+}
+
 
 
 
@@ -511,6 +611,22 @@ aside .body
 
 @media screen and (max-width: 991px) 
 {
+    #main
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section1
+    {
+        width: 85%;
+    }
+
+    aside
+    {
+        width: 66%;
+    }
+
     .carte
     {
         width: 224px;
@@ -519,17 +635,12 @@ aside .body
     aside div[class*="imgP"] 
     {
         width: 108px;
-        height: 137px;
-    }
-
-    aside .carte 
-    {
-        margin-bottom: 15%;
+        height: 101px;
     }
 
     aside .body 
     {
-        width: 44%;
+        width: 56%;
     }
 
     #cartesH
@@ -537,13 +648,52 @@ aside .body
         margin: 0%;
     } 
 
+    aside .etoiles 
+    {
+        margin-top: 14%;
+    }
+
     .plus
     {
         position: relative;
-        bottom: 627px;
-        left: 378px;
+        bottom: 390px;
+        left: 550px;
     }
-    
+
+    .titreP i 
+    {
+        padding-left: 235px;
+        padding-top: 20px;
+    }
+
+    img 
+    {
+        transform: translate(0px, -31%);
+    }
+
+    .imgH4 img
+    {
+        width: 100%;
+        transform: translate(0px, -34%);
+    }
+
+    .imgH6 img
+    {
+        width: 100%;
+        transform: translate(0px, -40%);
+    }
+
+    .imgP1 img, .imgP2 img
+    {
+        width: 152%;
+        transform: translate(-28px, -3%);
+    }
+
+    .imgP3 img
+    {
+        width: 100%;
+        transform: translate(0px, -18%);
+    }
 }
 
 @media screen and (min-width: 435px) and (max-width: 767px)
@@ -552,6 +702,8 @@ aside .body
     {
         width: 370px;
     }
+
+
 }  
 
 
@@ -571,13 +723,28 @@ aside .body
         flex-direction: column;
     }
 
+    #main h2, .titreP 
+    {
+        margin: 5% 8% 2% 3%;
+    }
+
     #section1
     {
         order: 2;
         width: 100%;
         background-color: initial;
     }
-    
+
+    #section1 .body 
+    {
+        margin-top: 0%;
+    }
+
+    #section1 div[class*="imgH"] 
+    {
+        height: 115px;
+    }
+
     aside
     {
         order: 1;
@@ -590,10 +757,20 @@ aside .body
         order: 3;
     }
 
-    .carte 
+    #section1 .carte 
     {
-        width: 355px;
-        height: 205px;
+        width: 350px;
+        height: auto;
+    }
+
+    #section1 p 
+    {
+        margin: 2% 6%;
+    }
+
+    #section1 .etoiles 
+    {
+        margin: 0% 6% 3%;
     }
 
     aside .carte 
@@ -603,6 +780,17 @@ aside .body
         height: initial;
     }
 
+    .titreP
+    {
+        align-items: initial;
+        justify-content: space-between;
+    }
+
+    .titreP i 
+    {
+        padding-left: initial;
+    }
+
     .plus
     {
         position: initial;
@@ -610,13 +798,18 @@ aside .body
 
     aside div[class*="imgP"]
     {
-        width: 148px;
+        width: 115px;
         height: 130px;
     }
 
     aside .body 
     {
-        width: 125px;
+        width: 145px;
+    }
+
+    aside .etoiles 
+    {
+        margin-top: 23%;
     }
 
     #section1 .carte:hover 
@@ -632,6 +825,18 @@ aside .body
     #cartesH
     {
         margin-bottom: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgP1 img, .imgP2 img 
+    {
+        width: 176%;
+        transform: translate(-41px, -1%);
+    }
+
+    img {
+        transform: translate(0px, -23%);
     }
 }
 
@@ -661,11 +866,10 @@ aside .body
 #section2 div[class*="imgA"]
 {
     overflow: hidden;
-    height: 78%;
     border-radius: 10px 10px 0px 0px;
 }
 
-.carteM
+.grandeC
 {
     height: 100%;
     width: 45%;
@@ -675,35 +879,87 @@ aside .body
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .1);
 }
 
-.carteM:hover
+.grandeC:hover
 { 
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 5px 5px 15px #0065FC;
     z-index: 1;
 }
 
 .imgM
 {
-    height: 90%;
+    height: 88%;
     overflow: hidden;
     border-radius: 10px 10px 0px 0px;
 
 }
 
-#section2 .carte
+#section2 div[class*="carte"]
 {
-    height: 47%;
     width: 50%;
     margin-top: 0%;
     margin: initial;
     border-radius: 15px 15px 15px 15px;
 }
 
+#cartesA .carte1
+{
+    height: 54%;
+}
+
+#cartesA .carte2
+{
+    height: 38%;
+}
+
+#cartesA .carte3
+{
+    height: 43%;
+}
+
+#cartesA .carte4
+{
+    height: 49%;
+}
+
+.imgA1
+{
+    height: 77%;
+}
+
+.imgA2
+{
+    height: 69%;
+}
+
+.imgA3
+{
+    height: 71%;
+}
+
+.imgA4
+{
+    height: 75%;
+}
+
+.imgM img
+{
+    width: 204%;
+    transform: translate(-111px, -3%);
+}
+
+.imgA1 img
+{
+    width: 100%;
+    transform: translate(0px, -29%);
+}
+
+
 .Apart
 {
     display: flex;
     flex-flow: column wrap;
-    height: 390px;
+    height: 304px;
     width: 48%;
     justify-content: space-between;
     align-content: space-between;
@@ -711,7 +967,8 @@ aside .body
 
 #section2 h3
 {
-    margin-left: 5%;   
+    margin-left: 5%;
+    font-size: small;   
 }
 
 
@@ -731,7 +988,7 @@ footer
     padding-top: 2%;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 65%;
     margin: 2.5%;
 }
 
@@ -746,6 +1003,41 @@ footer
 }
 
 
+@media screen and (max-width: 991px) 
+{
+    .imgM 
+    {
+        height: 82%;
+    }
+
+    .port
+    {
+        height: 87%;
+    }
+
+    .imgM img
+    {
+        width: 229%;
+        transform: translate(-126px, -0%);
+    }
+
+    .imgA1 img
+    {
+        transform: translate(0px, -23%);
+    }
+
+    .imgA2 img
+    {
+        transform: translate(0px, -2%);
+    }
+
+    .imgA3 img, .imgA4 img
+    {
+        transform: translate(0px, 0%);
+    }
+
+}
+
 
 
 @media screen and (min-width: 435px) and (max-width: 767px)
@@ -753,25 +1045,80 @@ footer
     #cartesA
     {
         flex-direction: column;
+        align-items: center;
     }
 
     .Apart
     {
-        width: 100%;
+        width: 480px;
         margin-top: 3%;
         height: 526px;
     }
 
-    #section2 .carte:hover 
+    #section2 div[class*="carte"]:hover 
     {
         transform: scale(1.07);
     }
 
-    #section2 .carteM:hover 
+    .grandeC:hover 
     {
         transform: scale(1.07);
     }
 
+    #section2 .port 
+    {
+        height: 91%;
+    }
+
+    .imgM 
+    {
+        height: 87%;
+    }
+
+    .imgA1 
+    {
+        height: 84%;
+    }
+
+    .imgA2 
+    {
+        height: 77%;
+    }
+
+    .imgA3, .imgA4
+    {
+        height: 80%;
+    }
+
+    .imgM img 
+    {
+        width: 334%;
+        transform: translate(-210px, -0%);
+    }
+    
+    .imgA1 img 
+    {
+        transform: translate(0px, -7%);
+    }
+
+    .imgA3 img 
+    {
+        transform: translate(-47px, -1%);
+        width: 121%;
+    }
+
+    .imgA4 img
+    {
+        width: 119%;
+        transform: translate(-11px, -2%);
+    }
+
+    .Sfooter 
+    {
+        width: 96%;
+    }
+    
+    
 }  
 
 @media screen and (max-width: 530px)
@@ -788,16 +1135,63 @@ footer
         align-content: center;
     }
 
-    #section2 .carte, .carteM
+    #section2 
     {
-        width: 355px;
+        margin-top: 13%;
+    }
+
+    #section2 h2
+    {
+        margin-left: 5%;
+    }
+
+    #section2 div[class*="carte"], .grandeC
+    {
+        width: 340px;
         height: 205px;
         margin: 3%;
     }
 
-    .imgM 
+    #section2 .imgM 
+    {
+        height: 78%;
+    }
+
+    .imgA1
+    {
+        height: 77%;
+    }
+
+    .imgM img 
+    {
+        width: 128%;
+        transform: translate(-63px, -12%);
+    }
+
+    .imgA1 img 
+    {
+        transform: translate(0px, -30%);
+    }
+
+    .imgA2 
+    {
+        height: 77%;
+    }
+
+    .imgA3
     {
         height: 80%;
+    }
+
+    .imgA4 img 
+    {
+        transform: translate(0px, -20%);
+    }
+
+    .imgA3 img
+     {
+        transform: translate(-29px, 0%);
+        width: 109%;
     }
 
     .Sfooter
